@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="header">
+    <h1>My Crunches Challenge</h1>
+    <p>by Flavia Medici</p>
+  </div>
+  
+  <div class="topnav">
+    <a href="#">Link</a>
+    <a href="#">Link</a>
+    <a href="#">Link</a>
+  </div>
+  
+  <div class="monthpicker">
+      <br>   
+      <p><button onclick="myMonth()" class="button button1">Display Month</button></p>
+      <h2 id="monthpick">&nbsp;</h2>
+      
+    </div>
+
+  <div class="row">
+      <div class="column side">
+        <h2>My Fitness Challenges</h2>
+        <p>Please choose your challenge</p>
+        <nav>
+          <ul>
+            <li><a href="squats.html">Squats</a></li>
+            <li><a href="plank.html">Plank</a></li>
+            <li><a href="crunches.html">Crunches</a></li>
+            <li><a href="pushup.html">Push Ups</a></li>
+            <li><a href="wallsit.html">Wall Sit</a></li>
+            <li><a href="burpee.html">Burpees</a></li>
+          </ul>
+        </nav>
+        
+      </div>
+
+    <div class="column middle">
+      <h2>Let's get started!!!</h2>
+  <form id='checkGroup' name="listForm">
+
+    <br>
+
+    <label>Day 1:  5 crunches  <input type="checkbox" name="choice" value="5" onchange="checkTotal()"><b>Great start!!!</b></label><br>
+
+    <label>Day 2:  8 crunches  <input type="checkbox" name="choice" value="8" onchange="checkTotal()"><b>You can do this!!!</b></label><br>
+
+    <label>Day 3:  10 crunches  <input type="checkbox" name="choice" value="10" onchange="checkTotal()"><b> Keep going!!! </b></label><br>
+    
+    <label class="rest">Day 4:  Rest Day </label><br>
+
+    <label>Day 5:  12 crunches  <input type="checkbox" name="choice" value="12" onchange="checkTotal()"><b>You go girl!!!</b></label><br>
+
+    <label>Day 6:  15 crunches  <input type="checkbox" name="choice" value="15" onchange="checkTotal()"><b>No pain, no gain!!!</b></label><br>
+
+    <label>Day 7:  20 crunches  <input type="checkbox" name="choice" value="20" onchange="checkTotal()"><b>One week down, three more to go</b></label><br>
+
+    <label class="rest">Day 8:  Rest Day </label><br>
+    
+    <label>Day 9:  30 crunches<input type="checkbox" name="choice" value="30" onchange="checkTotal()"><b>You can do this!!!</b></label><br>
+
+    <label>Day 10:  50 crunches<input type="checkbox" name="choice" value="50" onchange="checkTotal()"><b>Believe in yourself</b></label><br>
+    
+    <label>Day 11:  65 crunches  <input type="checkbox" name="choice" value="65" onchange="checkTotal()"><b> Keep going!!! </b></label><br>
+    
+    <label class="rest">Day 12:  Rest Day </label><br>
+
+    <label>Day 13: 75 crunches<input type="checkbox" name="choice" value="75" onchange="checkTotal()"><b>Awesome!!!</b></label><br>
+
+    <label>Day 14: 85 crunches<input type="checkbox" name="choice" value="85" onchange="checkTotal()"><b>Nothing can stop you</b></label><br>
+
+    <label>Day 15: 95 crunches<input type="checkbox" name="choice" value="95" onchange="checkTotal()"><b>Amaze balls</b></label><br>
+
+    <label class="rest">Day 16:  Rest Day </label><br>
+    
+    <label>Day 17: 100 crunches<input type="checkbox" name="choice" value="100" onchange="checkTotal()"><b>Half way done!!!</b></label><br>
+    
+    <label>Day 18: 110 crunches<input type="checkbox" name="choice" value="110" onchange="checkTotal()"><b> Nice progress!!!</b></label><br>
+    
+    <label>Day 19: 120 crunches<input type="checkbox" name="choice" value="120" onchange="checkTotal()"><b> Nice progress!!!</b></label><br>
+
+    <label class="rest">Day 20: Rest Day</label><br>
+    
+    <label>Day 21: 130 crunches<input type="checkbox" name="choice" value="130" onchange="checkTotal()"><b>You are on fire!!!</b></label><br>
+
+    <label>Day 22: 140 crunches<input type="checkbox" name="choice" value="140" onchange="checkTotal()"><b>Nothing can stop you!!!</b></label><br>
+
+    <label>Day 23: 150 crunches<input type="checkbox" name="choice" value="150" onchange="checkTotal()"><b>Only one more week!!!</b></label><br>
+
+    <label class="rest">Day 24:  Rest Day </label><br>
+    
+    <label>Day 25: 160 crunches<input type="checkbox" name="choice" value="160" onchange="checkTotal()"><b>WOOOHOO!!!</b></label><br>
+
+    <label>Day 26: 170 crunches<input type="checkbox" name="choice" value="170" onchange="checkTotal()"><b>Come on girl!!!</b></label><br>
+
+    <label>Day 27: 180 crunches<input type="checkbox" name="choice" value="180" onchange="checkTotal()"><b>Three weeks down!!!</b></label><br>
+
+    <label class="rest">Day 28: Rest Day</label><br>
+
+    <label>Day 29: 190 crunches<input type="checkbox" name="choice" value="190" onchange="checkTotal()"><b>You rock!!!</b></label><br>
+
+    <label>Day 30: 200 crunches<input type="checkbox" name="choice" value="200" onchange="checkTotal()"><b>No pain no gain</b></label><br>
+
+   
+  
+  <button onclick="document.getElementById('challenge').value = ''">Clear all</button>
+  <p></p> 
+  <p></p>
+   
+  </div>
+ 
+  See your total for this month:  <input type="text" size="2" name="total" value="0"/>
+      </form>
+  
+      <div class="column side">
+        <h2>Crunches</h2>
+        <p>Benefits of crunches: </p>
+        <ul>
+          <li>Tone waist and abs</li>
+          <li>Stregthen core muscles</li>
+          <li>Different variations</li>
+          <li>Burns calories and fat</li>
+          <li>Works your entire body</li>
+          <li>Improves Flexibility</li>
+        </ul>  
+       <img src="pics/crunchespic.jpg" alt="CrunchesPic" id="CrunchesPic">
+       <caption>Source: Spotebi</caption>
+      </div>
+    </div>
+      <script src="main.js"></script>
+      <div class="footer">
+          <p>
+            <a class="btn btn-social-icon btn-linkedin" href="">
+            <span class="fa fa-linkedin"></span>
+          </a>
+          <a class="btn btn-social-icon btn-instagram">
+              <span class="fa fa-instagram"></span>
+            </a>
+            <a class="btn btn-social-icon btn-github">
+                <span class="fa fa-github"></span>
+              </a>
+        </p>
+        </div>
+  </body>
+  </html>
+
+ 
